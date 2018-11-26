@@ -1,0 +1,35 @@
+{
+    "/games": {
+        "controller": "Main",
+        "method": "game"
+    },
+
+    "/login": {
+        "controller": "Login",
+        "method": "loginAction",
+        "params": {
+            "email": "string",
+            "password": "string"
+        }
+    },
+
+    "/about": {
+        "controller": "Main",
+        "method": "about"
+    },
+
+    "/": {
+        "controller": "Main",
+        "method": "get"
+    },
+
+    "/index.php": {
+        "controller": "Main",
+        "method": "get"
+    },
+
+    "/register": {
+        "controller": "Main",
+        "method": "register"
+    }
+}

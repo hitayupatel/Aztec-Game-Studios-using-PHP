@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="Assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="Assets/js/bootstrap.min.js"></script> 
+    <script src="Assets/js/jquery-3.3.1.min.js"></script>
+    <style type="text/css">
+        .navbar-nav > li{
+            padding-left:30px;
+            padding-right:30px;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: rgb(0,0,0);
+            text-align: center;
+        }
+        body {
+            background-color: rgb(135,135,135);
+        }
+    </style>
+    <title>{% block title %}{% endblock %} </title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <div class = "container-fluid">
+        <a class = "navbar-brand" href = "#"></a>
+        <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class = "collapse navbar-collapse" id = "navbarResponsive">
+            <ul class = "navbar-nav ml-auto">
+                <li class = "nav-item active">
+                    <a class = "nav-link" href = "/index.php">Home</a>
+                </li>
+                <li class = "nav-item active">
+                    <a class = "nav-link" href = "/about">About</a>
+                </li>
+                <li class = "nav-item active">
+                    <a class = "nav-link" href = "/games">Game Release </a>
+                </li>
+                <li class = "nav-item active">
+                    <a class = "nav-link" href = "/login">Login</a>
+                </li>
+                <li class = "nav-item active">
+                    <a class = "nav-link" href = "/register">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Footer Section-->
+    {% block content %} {% endblock %}
+    <footer class="footer justify-content-center">
+        <div class="container">
+            {% block footer %}
+                ©Copyright 2000 - {{ "now"|date('m.d.Y H:i', timezone="America/Los_Angeles") }} All Rights Reserved
+            {% endblock %}
+        </div>
+    </footer>
+</body>
+</html>

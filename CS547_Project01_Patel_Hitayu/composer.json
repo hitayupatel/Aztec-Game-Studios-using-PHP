@@ -1,0 +1,25 @@
+{
+    "require": {
+        "twbs/bootstrap": "^4.1",
+        "twig/twig": "^2.5",
+        "monolog/monolog": "^1.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "AztecGameStudios\\": "src"
+        }
+    },
+
+        "name": "hpatel/aztecgamestudios",
+        "description": "Manages the online presence of AGS",
+        "minimum-stability": "stable",
+        "type": "project",
+        "license": "Apache 2.0",
+        "authors": [
+            {
+                "name": "Hitayu Patel",
+                "email": "hitayupatel8@gmail.com"
+            }
+        ]
+
+}
